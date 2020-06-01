@@ -1,0 +1,17 @@
+{
+  "name": "atwmc",
+  "version": "1.0.0",
+  "description": "Sample API Automation Testing with Mocha Framework",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ./test --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 180000",
+    "reports": "open 'reports/mochawesome/mochawesome.html'"
+  },
+  "author": "Yayan Kuswara",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "mocha": "^7.2.0",
+    "mochawesome": "^6.1.1",
+    "supertest": "^4.0.2"
+  }
+}
